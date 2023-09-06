@@ -5,7 +5,7 @@ libs/*
 js-forms/*
 
 # Workspace from VSCode
-*.code-workspace
+.code-workspace
 
 # Notes
-/End of work.txt
+/.txt
