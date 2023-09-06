@@ -1,0 +1,11 @@
+# Fontawesome
+libs/*
+
+# Form example
+js-forms/*
+
+# Workspace from VSCode
+*.code-workspace
+
+# Notes
+/End of work.txt

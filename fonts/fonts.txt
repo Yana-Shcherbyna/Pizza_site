@@ -1,0 +1,3 @@
+'Quicksand'- 500 600 700
+'Kaushan Script'- 400
+'Kosugi'- 400

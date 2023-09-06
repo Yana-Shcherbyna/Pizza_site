@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="container bgBlack">
+      <!-- Знижка банер -->
+      <div class="cupon"></div>
+
+      <div class="header bgBlack">
+        <div class="header__logo">
+          <img src="img/Logo.png" alt="" />
+        </div>
+        <div class="header__nav">
+          <ul class="header__menu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li id="cuponModal"><a href="#">Specials & Coupons</a></li>
+            <li><a href="#reservation">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="main section">
+        <a name="main"></a>
+        <div class="main__info">
+          <div class="main__infoTitle">Pizza family</div>
+          <div class="main__infoSubtitle">
+            people disappoint,<br />
+            but pizza never does.
+          </div>
+          <div class="main__search">
+            <input class="main__searchInp bgBlack" type="text" />
+            <button class="main__searchBtn">
+              <img src="img/Search Location.png" alt="" />
+              <span> Search Location</span>
+            </button>
+          </div>
+          <button class="main__btn">Try now</button>
+        </div>
+        <div class="main__img">
+          <img src="img/Perfomance.png" alt="" />
+        </div>
+        <div class="main__daytime">
+          <img class="main__daytimeMoon" src="img/Moon.png" alt="Moon" />
+          <img class="main__daytimeSun hide" src="img/Sun.png" alt="Sun" />
+        </div>
+      </section>
+
+      <section class="menu section">
+        <a name="menu"></a>        
+          <div class="menu__img">
+            <img src="img/Main__pizza.png" alt="" />
+          </div>
+          <div class="menu__info">
+          <div class="menu__title">Menu</div>
+          <div class="menu__assortment">
+            
+            <div class="menu__assortmentComposition">
+              <div class="menu__assortmentIngredients">
+                 <div class="menu__assortmentTitle">Do it yourself</div>
+                <ul>
+                 
+                  <li class="pizza__ingredients">
+                    Chesse ........................
+                    <span class="ingredient__price"><span class="currency__sing">&#8372</span> 25</span>
+                  </li>
+                  <li class="pizza__ingredients">
+                    Mushrooms .....................
+                    <span class="ingredient__price"><span class="currency__sing">&#8372</span> 15</span>
+                  </li>
+                  <li class="pizza__ingredients">
+                    Sassage .......................
+                    <span class="ingredient__price"><span class="currency__sing">&#8372</span> 30</span>
+                  </li>
+                  <li class="pizza__ingredients">
+                    Olives ........................
+                    <span class="ingredient__price"><span class="currency__sing">&#8372</span> 20</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__assortmentSize">
+                <div class="menu__assortmentTitle">Choose a size</div>
+                <ul>
+                  
+                  <li class="pizza__size">
+                    Small .........................
+                    <span class="size__price"><span class="currency__sing">&#8372</span> 40</span>
+                  </li>
+                  <li class="pizza__size">
+                    Medium ........................
+                    <span class="size__price"><span class="currency__sing">&#8372</span> 50</span>
+                  </li>
+                  <li class="pizza__size">
+                    Large .........................
+                    <span class="size__price"><span class="currency__sing">&#8372</span> 60</span>
+                  </li>
+                  <li class="pizza__size">
+                    Giant .........................
+                    <span class="size__price"><span class="currency__sing">&#8372</span> 70</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu__assortmentGourmet">
+              <div class="menu__assortmentTitle">Gourmet Pizza</div>
+              <div class="menu__gourmetItem">
+                Four chesse pizza
+                <span class="gourmet__price"><span class="currency__sing">&#8372</span> 140</span>
+              </div>
+              <div class="menu__gourmetItemDescription">
+                mozzarella cheese, parmesan cheese, door blue cheese, bri cheese, cream sauce
+              </div>
+              <div class="menu__gourmetItem">
+                Hawaiian pizza
+                <span class="gourmet__price"><span class="currency__sing">&#8372</span> 110</span>
+              </div>
+              <div class="menu__gourmetItemDescription">
+                chicken fillet, pineapple, corn, cheese, sauce
+              </div>
+              <div class="menu__gourmetItem">
+                Signature pizza
+                <span class="gourmet__price"><span class="currency__sing">&#8372</span> 150</span>
+              </div>
+              <div class="menu__gourmetItemDescription">
+                saliami, ham, mushrooms, bulgarian pepper, tomatoes, olives, cheese, sauce
+              </div>
+              <div class="menu__gourmetItem">
+                Italian pizza
+                <span class="gourmet__price"><span class="currency__sing">&#8372</span> 130</span>
+              </div>
+              <div class="menu__gourmetItemDescription">
+                saliami, bacon, mozzarella cheese, tomatoes, hard cheese, cream sauce, dill
+              </div>
+              <div class="menu__gourmetMoreBtn"><button class="menu__gourmetBtn" >Explore more</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="top section">
+        <div class="top__left">
+          <div class="top__leftTitle">
+            <span class="top__title">pizza</span> of the month <br> the big <span class="top__title top_titleName">bird</span></div>
+            <div class="top__leftImg">
+              <img src="img/top__pizza.png" alt="">
+            </div>
+        </div>
+           <div class="top__line"></div>
+        
+        <div class="top__right"> 
+          <div class="top__rightInfo">
+            <ul>
+              <li class="top__rightNamePizza">Meat Pizza</li>
+              <li class="top__rightNamePizza">Margarita Pizza</li>
+              <li class="top__rightNamePizza">Hawaiian Pizza</li>
+              <li class="top__rightNamePizza">Pepperoni Pizza</li>
+              <li class="top__rightNamePizza">Veggie Pizza</li>
+              <li class="top__rightNamePizza">Cheese Pizza</li>
+            </ul>
+
+          
+          </div>
+          <div class="top__rightBtn">
+            <button class="top__rightOrder">Order online now</button>
+            <button class="top__rightMenu">See our menu</button>
+         </div>
+          
+        <!-- </div> -->
+        </div>
+      </section>
+
+      <section class="reservation section">
+        <a name="reservation"></a>
+        <div class="reservation__logo">*terms & conditions applied .</div>
+        <form action="" class="reservation__form">
+          <div class="reservation__formTitle">Reservation</div>
+          <div class="reservation__formSubTitle">Book online or give us a call on +91 1111 222 333</div>
+          <div class="reservation__formSubTitleTime ">Between 9:30 am - 10:00 pm</div>
+          <div class="reservation__formBodyBlock">
+                      
+            <div class="reservation__formBody">
+              <div class="reservation__formItem">name</div>
+              <input type="text" class="reservation__formData" name="name" autocomplete="off"
+              id="reservation__formName">
+            </div>
+
+            <div class="reservation__formBody">
+              <div class="reservation__formItem">e-Mail</div>
+              <input type="text" class="reservation__formData" name="email " autocomplete="off"
+              id="reservation__formEmail">
+            </div>
+
+            <div class="reservation__formBody">
+              <div class="reservation__formItem">people number</div>
+              <input type="text" class="reservation__formData" name="peopleNum" autocomplete="off"    
+              id="reservation__formPeopleNum">
+            </div>
+            
+            <div class="reservation__formBody">
+              <div class="reservation__formItem">Date & time</div>
+              <input type="text" class="reservation__formData" name="DayTime" autocomplete="off"      
+              id="reservation__formDayTime">
+            </div>
+          </div>
+          <input type="submit" value="Send Mail" class="reservation__formBtn">
+        </form>       
+      </section>
+
+      <section class="order section">
+        <div class="order__header">
+        <div class="order__headerLogo">
+          <img src="img/Logo.png" alt="" />
+        </div>
+        <div class="order__headerNav">
+          <ul class="order__headerMenu">
+            <li><a href="#"><img src="img/Question.png" alt=""> Help</a></li>
+            <li><a href="#"><img src="img/UserPlus.png" alt="">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="order__img">
+        <img src="img/Pizza-slice.png" alt="">
+      </div>
+      <div class="order__body">
+        <div class="order__bodyAccordion">
+          <div class="accordion__item">
+            <div class="accordion__itemIcon">
+              <img src="img/User.png" alt="">
+            </div>
+             <div class="accordion__itemText">
+              <div class="accordion__itemTitle ">Account</div>
+              <div class="accordion__itemTextSubTitle accordion__hide">
+                <div class="accordion__itemSubTitleText">To place your order now, log in to your existing account or sign up.</div>
+                <div class="accordion__itemSubTitleBlock">
+                  <div class="accordion__itemSubTitleLeft">Have an account ? <br> <a href="#">Log in</a> </div>
+                  <div class="accordion__itemSubTitleRight">
+                    New to Mania ? <br> <a href="#">Sign in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__itemIcon">
+              <img src="img/Location.png" alt="">
+            </div>
+            <div class="accordion__itemText">
+              <div class="accordion__itemTitle">Delivery address</div>
+               <div class="accordion__itemTextSubTitle accordion__hide">
+                <div class="accordion__itemSubTitleText">To place your order now, log in to your existing account or sign up.</div>
+                <div class="accordion__itemSubTitleBlock">
+                  <div class="accordion__itemSubTitleLeft">Have an account ? <br> <a href="#">Log in</a> </div>
+                  <div class="accordion__itemSubTitleRight">
+                    New to Mania ? <br> <a href="#">Sign in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__itemIcon">
+              <img src="img/Payment.png" alt="">
+            </div>
+            <div class="accordion__itemText">
+              <div class="accordion__itemTextTitle">Payment</div>
+              <div class="accordion__itemTextSubTitle accordion__hide">
+                <div class="accordion__itemSubTitleText">To place your order now, log in to your existing account or sign up.</div>
+                <div class="accordion__itemSubTitleBlock">
+                  <div class="accordion__itemSubTitleLeft">Have an account ? <br> <a href="#">Log in</a> </div>
+                  <div class="accordion__itemSubTitleRight">
+                    New to Mania ? <br> <a href="#">Sign in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order__bodyPay">
+
+          <div class="order__bodyPayTitle">
+            <!-- <div class="order__bodyTitleImg"> -->
+              <img src="img/Order_pizza.png" alt="">
+              <div class="order__bodyPayTitleText">Wow ! Pizza <br> <span>delivered to this location</span> </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="order__bodyPayChoice">
+            <div class="order__bodyPayCupon">
+              Apply your coupon code 
+              <input type="text" value="# xxxx xxxx" name="cuponCode" class="order__payCupon">
+              <span class="order__payCuponDiscount"></span>
+            </div>
+            
+            <div class="order__bodyPayChoicePizza">
+              <ul class="order__choicePizza"> Choice Pizza
+
+                <li class="order__choicePizzaItem"> 
+                  <div class="name__choicePizzaPriceItem">Four chesse pizza 
+                    <span class="size__choicePizza">Choice size <span>></span></span>
+
+                    
+                    <div class="size__choicePizzaHide sizeHide"> 
+                      <input type="radio" class="size__choicePizzaItem" value="small" name="sizePizza1" > Small
+                      <!-- <span class="pricePizzaForShowSize"></span> -->
+                      
+                     <input type="radio"
+                      class="size__choicePizzaItem" value="medium" name="sizePizza1" checked > Medium
+                    <!-- <span class="pricePizzaForShowSize"></span> -->
+
+                      <input type="radio"
+                        class="size__choicePizzaItem" value="large" name="sizePizza1"> Large
+                      <input type="radio"
+                        class="size__choicePizzaItem" value="giant" name="sizePizza1"> Giant
+                    </div>
+
+                   
+                  </div>
+
+                  <div class="count__choicePizzaItemPrice">
+                    <span class="count__minus">-</span>
+                    <span class="count__number">1</span>
+                    <span class="count__add">+</span>
+                  </div>
+                  
+                  <div class="show__choicePizzaItemPrice">
+                    <span class="pricePizzaForShowSize">115</span>
+                    <div class="show__pizzaItemPrice">
+                      <span class="currency__sing">&#8372</span> <span class="show__pizzaItemPriceCost"></span>
+                    </div>
+                    <div class="show__pizzaItemPriceDiscount hide__showDiscount">
+                      <span class="currency__sing">&#8372</span>
+                      <span class="show__pizzaItemPriceCostDiscount"></span>
+                    </div>
+                  </div>
+                 
+              </li>
+              
+                  
+
+                <li class="order__choicePizzaItem"> 
+                  <div class="name__choicePizzaPriceItem">Hawaiian pizza <span class="size__choicePizza">Choice size <span>></span></span>
+
+                    <div class="size__choicePizzaHide sizeHide"> 
+                    <input type="radio" class="size__choicePizzaItem" value="small" name="sizePizza2" > Small
+                    <!-- <span class="pricePizzaForShowSize">119</span> -->
+                    
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="medium" name="sizePizza2" checked> Medium
+                    <!-- <span class="pricePizzaForShowSize">130</span> -->
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="large" name="sizePizza2"> Large
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="giant" name="sizePizza2"> Giant
+                    </div>
+                  </div>
+
+                  
+
+                  <div class="count__choicePizzaItemPrice">
+                    <span class="count__minus">-</span>
+                    <span class="count__number">1</span>
+                    <span class="count__add">+</span>
+                  </div>
+                  
+                  <div class="show__choicePizzaItemPrice">
+                    <span class="pricePizzaForShowSize">130</span>
+                  <div class="show__pizzaItemPrice">
+                    <span class="currency__sing">&#8372</span> <span class="show__pizzaItemPriceCost">110</span>
+                 </div>
+                 <div class="show__pizzaItemPriceDiscount hide__showDiscount">
+                  <span class="currency__sing">&#8372</span>
+                  <span class="show__pizzaItemPriceCostDiscount"></span>
+                </div>
+                </div>
+              </li>
+            
+                <li class="order__choicePizzaItem"> 
+                  <div class="name__choicePizzaPriceItem">Signature pizza <span class="size__choicePizza">Choice size <span>></span></span>
+
+                    <div class="size__choicePizzaHide sizeHide"> 
+                   <input type="radio" class="size__choicePizzaItem" value="small" name="sizePizza3"> Small
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="medium" name="sizePizza3" checked> Medium
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="large" name="sizePizza3"> Large
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="giant" name="sizePizza3"> Giant
+                    </div>
+                 
+                  </div>
+
+                  <div class="count__choicePizzaItemPrice">
+                    <span class="count__minus">-</span>
+                    <span class="count__number">1</span>
+                    <span class="count__add">+</span>
+                  </div>
+                  
+                  <div class="show__choicePizzaItemPrice">
+                  <div class="show__pizzaItemPrice">
+                    <span class="currency__sing">&#8372</span> <span class="show__pizzaItemPriceCost">150</span>
+                 </div>
+                 <div class="show__pizzaItemPriceDiscount hide__showDiscount">
+                  <span class="currency__sing">&#8372</span>
+                  <span class="show__pizzaItemPriceCostDiscount"></span>
+                </div>
+                </div>
+              </li>
+              
+
+                <li class="order__choicePizzaItem"> 
+                  <div class="name__choicePizzaPriceItem">Italian pizza <span class="size__choicePizza">Choice size <span>></span></span>
+
+                    <div class="size__choicePizzaHide sizeHide"> 
+                    <input type="radio" class="size__choicePizzaItem" value="small" name="sizePizza4"> Small
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="medium" name="sizePizza4" checked> Medium
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="large" name="sizePizza4"> Large
+                    <input type="radio"
+                      class="size__choicePizzaItem" value="giant" name="sizePizza4"> Giant
+                  </div>
+                   
+                  </div>
+
+                  <div class="count__choicePizzaItemPrice">
+                    <span class="count__minus">-</span>
+                    <span class="count__number">1</span>
+                    <span class="count__add">+</span>
+                  </div>
+                  
+                  <div class="show__choicePizzaItemPrice">
+                  <div class="show__pizzaItemPrice">
+                    <span class="currency__sing">&#8372</span> <span class="show__pizzaItemPriceCost">130</span>
+                 </div>
+                 <div class="show__pizzaItemPriceDiscount hide__showDiscount">
+                  <span class="currency__sing">&#8372</span>
+                  <span class="show__pizzaItemPriceCostDiscount"></span>
+                </div>
+                </div>
+              </li>
+               
+    
+              </ul>
+
+
+               <!-- <ul class="hide__showDiscount"> 
+                      <li><input type="radio" class="size__choicePizzaItem" value="small"> Small</li>
+                      <li><input type="radio"
+                        class="size__choicePizzaItem" value="medium"> Medium</li>
+                      <li><input type="radio"
+                        class="size__choicePizzaItem" value="large"> Large</li>
+                      <li><input type="radio"
+                        class="size__choicePizzaItem" value="giant"> Giant</li>
+                    </ul> -->
+            </div>
+          </div>
+
+          <div class="order__bodyPayBill"></div>
+        </div>
+      </div>
+      </section>
+    </div>
+    <!-- <div class="wrapper"> -->
+    <!-- </div> -->
+    <script src="js/main.js"></script>
+    <script src="js/payBill.js"></script>
+
+    <!-- Script для банера знижки sweetAlert2 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+
+  </body>
+</html>

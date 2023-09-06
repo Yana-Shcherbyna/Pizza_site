@@ -1,0 +1,781 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Kosugi;
+  src: url("../fonts/Kosugi/Kosugi-Regular.ttf");
+}
+@font-face {
+  font-family: Kaushan_Script;
+  src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 1920px;
+  font-family: Quicksand;
+}
+.section {
+  height: 1080px;
+  border: 1px solid black;
+}
+/* Знижка банер зміни до модалки*/
+body {
+  font-family: Quicksand;
+}
+.swal2-styled.swal2-confirm {
+  background: #ff8c42 !important;
+  font-family: Quicksand !important;
+}
+.swal2-container.swal2-center > .swal2-popup {
+  background: rgba(255, 254, 237, 0.92) !important;
+}
+.swal2-icon.swal2-info {
+  border-color: #93f6bc !important;
+  color: #34ce60 !important;
+}
+
+/* 1-st section "main" ************************************/
+/* header */
+.header {
+  height: 145px;
+  width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.header__logo {
+  margin-left: 95px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 923px;
+  margin-right: 100px;
+}
+.header__menu a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ff8c42;
+}
+/* main body */
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main__info {
+  font-style: normal;
+  font-weight: 600;
+  color: #ff8c42;
+  margin: 330px 0 0 84px;
+}
+.main__infoTitle {
+  font-size: 96px;
+  line-height: 120px;
+  margin-bottom: 72px;
+}
+.main__infoSubtitle {
+  height: 160px;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.main__search {
+  display: flex;
+  margin-bottom: 72px;
+}
+.main__searchInp {
+  border: 4px solid #ff8c42;
+  border-radius: 5px;
+  height: 40px;
+  width: 276px;
+}
+.main__searchInp:focus {
+  border: 4px solid #ff8c42;
+  outline: none;
+}
+.main__searchBtn {
+  background: #ff8c42;
+  border: 4px solid #ff8c42;
+  border-radius: 5px;
+  width: 198px;
+  height: 47px;
+  margin-left: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+  font-family: Quicksand;
+}
+.main__searchBtn img {
+  vertical-align: middle;
+}
+.main__btn {
+  width: 191px;
+  height: 68px;
+  background: #ff8c42;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  border: none;
+  font-family: Quicksand;
+}
+.main__img {
+  margin: auto;
+}
+/* перемикач ніч-день */
+.main__daytime {
+  position: relative;
+  right: 235px;
+  bottom: -932px;
+  cursor: pointer;
+}
+.hide {
+  display: none !important;
+}
+.main__daytime img {
+  position: absolute;
+}
+.bgBlack {
+  background: #151515;
+}
+.bgWhite {
+  background: #f4f4f4;
+}
+/* 2-nd section "menu" ************************************/
+.menu {
+  display: flex;
+}
+.menu__img {
+  margin-top: 160px;
+}
+.menu__info {
+  width: 75%;
+}
+.menu__title {
+  font-family: Kaushan_Script;
+  font-size: 152px;
+  line-height: 221px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ff8c42;
+}
+.menu__assortment {
+  display: flex;
+  justify-content: space-between;
+  font-family: Kosugi;
+  letter-spacing: 0.02em;
+  color: #ffddc8;
+}
+.menu__assortmentDay {
+  color: #7b3000;
+}
+.menu__assortment > div {
+  width: 50%;
+  padding-right: 100px;
+}
+.menu__assortmentIngredients {
+  margin-bottom: 48px;
+}
+.menu__assortmentComposition ul {
+  list-style: none;
+}
+.menu__assortmentTitle {
+  height: 92px;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.pizza__ingredients,
+.pizza__size {
+  height: 53px;
+  font-size: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.menu__gourmetItem {
+  font-size: 40px;
+  line-height: 40px;
+  align-items: center;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__gourmetItemDescription {
+  font-size: 20px;
+  line-height: 137.5%;
+  text-transform: lowercase;
+  width: 346px;
+  height: 96px;
+  margin-bottom: 21px;
+}
+.menu__gourmetBtn {
+  width: 247px;
+  height: 64px;
+  background: #ff8c42;
+  border-radius: 5px;
+  border: none;
+  font-family: Kosugi;
+  color: #ffddc8;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.menu__gourmetMoreBtn {
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* 3-nd section "top" ************************************/
+.top {
+  display: flex;
+}
+.top__leftTitle {
+  height: 172px;
+  width: 729px;
+  margin: 132px 0 16px 148px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.top__title {
+  color: #ff8c42;
+  height: 79px;
+}
+.top_titleName {
+  font-size: 96px;
+  line-height: 120px;
+  text-transform: uppercase;
+  color: #ff8c42;
+  height: 93px;
+}
+.top__line {
+  transform: skew(154deg);
+  border: 10.5px solid #ff8c42;
+  margin-left: 205px;
+}
+.top__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top__rightInfo {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.085em;
+  text-transform: capitalize;
+  color: #ffddc8;
+  margin-top: 293px;
+}
+.top__rightNamePizza {
+  margin-bottom: 38px;
+}
+.top__rightNamePizza:nth-child(1) {
+  margin-left: 180px;
+}
+.top__rightNamePizza:nth-child(2) {
+  margin-left: 140px;
+}
+.top__rightNamePizza:nth-child(3) {
+  margin-left: 100px;
+}
+.top__rightNamePizza:nth-child(4) {
+  margin-left: 60px;
+}
+.top__rightNamePizza:nth-child(5) {
+  margin-left: 20px;
+}
+.top__rightNamePizza:nth-child(6) {
+  margin-left: -20px;
+}
+.top__rightBtn {
+  margin: 0 0 133px 20px;
+}
+.top__rightOrder,
+.top__rightMenu {
+  font-family: Quicksand;
+  width: 201px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #ff8c42;
+  border-radius: 5px;
+  border: none;
+}
+.top__rightOrder {
+  margin-right: 113px;
+}
+.top__rightDay {
+  color: #7b3000;
+}
+/* 4-nd section "reservation" ************************************/
+.reservation {
+  color: #ffffff;
+  background: url(../img/Bg__3.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* для денного макету */
+.reservation__day {
+  color: #151515;
+  background-color: #ffffff;
+}
+/* *********************** */
+.reservation__logo {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: capitalize;
+  margin: 19px 141px 0 0;
+}
+.reservation__form {
+  box-sizing: border-box;
+  width: 626px;
+  height: 926.14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-width: 3px 1px 1px 3px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  margin: 32px 141px;
+  text-align: center;
+  font-weight: 600;
+}
+/* для денного макету */
+.reservation__formDay {
+  background: rgba(217, 217, 217, 0.59);
+  box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border-style: none;
+}
+/* *********************** */
+.reservation__formTitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #ff5b00;
+  margin-top: 38px;
+}
+.reservation__formSubTitle,
+.reservation__formSubTitleTime {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.085em;
+  text-transform: capitalize;
+  margin-top: 7px;
+}
+.reservation__formSubTitleTime {
+  height: 30px;
+}
+.reservation__formBodyBlock {
+  width: 424px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: capitalize;
+  margin: auto;
+  padding-top: 204px;
+}
+.reservation__formBody {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+.reservation__formData {
+  border: none;
+  background: transparent;
+  border-bottom: 2px dashed #ffffff;
+  height: 26px;
+  outline: none;
+  /* поле вводу текста */
+  caret-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+#reservation__formName {
+  width: 324px;
+}
+#reservation__formEmail {
+  width: 342px;
+}
+#reservation__formPeopleNum {
+  width: 250px;
+}
+#reservation__formDayTime {
+  width: 280px;
+}
+/* для денного макету */
+.reservation__formDataDay {
+  border-bottom: 2px dashed #151515;
+  caret-color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.7);
+}
+/* *********************** */
+.reservation__formBtn {
+  width: 155px;
+  height: 42px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: capitalize;
+  background: #ff5b00;
+  border-radius: 5px;
+  border: none;
+  margin-top: 76px;
+  cursor: pointer;
+}
+/* для денного макету */
+.reservation__formBtnDay {
+  color: #151515;
+}
+/* *********************** */
+/* для валідації при помилці */
+.error {
+  color: #ff3300bb;
+}
+/* *********************** */
+/* 5-nd section "reservation" ************************************/
+.order {
+  position: relative;
+  color: white;
+}
+/* для денного макету */
+.order__day {
+  background: white;
+  color: #1e1e1e;
+}
+/* *********************** */
+.order__header {
+  height: 129px;
+  background: #212121;
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order__headerLogo {
+  margin: 57px 0 27px 101px;
+}
+.order__headerMenu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 331px;
+  margin: 57px 183px 27px 0;
+}
+.order__headerMenu a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: white;
+}
+.order__img {
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+}
+.order__body {
+  display: flex;
+  justify-content: space-between;
+}
+.order__bodyAccordion {
+  margin: 86px 0 0 147px;
+}
+.accordion__item {
+  width: 989px;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.2);
+  border-width: 2px 0px 0px 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1px);
+  border-radius: 5px;
+  margin-bottom: 96px;
+  display: flex;
+  align-items: center;
+}
+.accordion__itemDay {
+  background: rgba(217, 217, 217, 0.59);
+  box-shadow: 10px 19px 30px 2px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+.accordion__itemIcon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  margin-left: -46px;
+}
+/* для денного макету */
+.accordion__itemIconDay {
+  background: #1e1e1e;
+}
+/* *********************** */
+.accordion__itemIcon img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.accordion__itemText {
+  margin-left: 26px;
+  line-height: 96px;
+  font-weight: 700;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.accordion__itemTitle {
+  height: 96px;
+}
+/* для accordion випадаючий блок (приховування)*/
+.accordion__hide {
+  display: none;
+}
+.accordion__scale {
+  margin-left: 47px;
+  transform: scale(1.2);
+}
+/* *********************** *********/
+/* стилі для accordion випадаючий блок  */
+.accordion__itemTextSubTitle {
+  font-size: 16px;
+  line-height: 20px;
+  mix-blend-mode: normal;
+}
+.accordion__itemSubTitleText {
+  margin-bottom: 32px;
+}
+.accordion__itemSubTitleBlock {
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  margin-bottom: 28px;
+}
+.accordion__itemSubTitleBlock > div {
+  width: 142px;
+  height: 36px;
+  opacity: 0.7;
+  border: 1px solid #ff8c42;
+  border-radius: 5px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.accordion__itemSubTitleBlock a {
+  color: #ff8c42;
+}
+/* ************************************* */
+.order__bodyPay {
+  width: 465px;
+  height: 775px;
+  background: rgba(255, 255, 255, 0.2);
+  border-width: 2px 0px 0px 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2.5px);
+  border-radius: 5px;
+  margin: 89px 186px 0 0;
+}
+/* для денного макету */
+.order__bodyPayDay {
+  background: rgba(217, 217, 217, 0.59);
+  box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+/* ************************************* */
+.order__bodyPayTitle {
+  margin: 27px 0 0 34px;
+  display: flex;
+}
+.order__bodyPayTitleText {
+  margin: 15px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+}
+.order__bodyPayTitleText span {
+  font-size: 16px;
+}
+.order__bodyPayChoice {
+  margin: 54px 0 0 27px;
+  height: fit-content;
+  border-left: 4px solid #ff8c42;
+}
+.order__bodyPayCupon {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff8c42;
+  margin-left: 9px;
+}
+.order__payCupon {
+  width: 100px;
+  background: transparent;
+  font-family: Quicksand;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  margin-left: 19px;
+}
+.order__payCuponDiscount {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #28f83d;
+}
+/* для денного макету */
+.order__payCuponDay {
+  color: #1e1e1e;
+}
+.order__payCuponDiscountDay {
+  color: #026f0d;
+}
+/* ************************************* */
+/* вибір піцци */
+/* .order__bodyPayChoicePizza {
+  display: flex;
+  flex-direction: column;
+} */
+.order__choicePizza {
+  list-style: none;
+  /* width: 100%; */
+  margin: 20px 100px 0 9px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ff8c42;
+  /* display: flex;
+  flex-direction: column; */
+}
+.order__choicePizzaItem {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.name__choicePizzaPriceItem {
+  width: 140px;
+}
+.size__choicePizza {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: -4px;
+  color: #ffffff;
+  /* position: relative; */
+}
+.size__choicePizza > span {
+  color: #ff8c42;
+}
+.count__choicePizzaItemPrice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* text-align: center; */
+  color: #019310;
+  width: 97px;
+  height: 24px;
+  background: #d9d9d9;
+  border-radius: 5px;
+}
+.count__minus,
+.count__add {
+  font-size: 25px;
+}
+.show__choicePizzaItemPrice {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: 24px;
+  width: 26px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ff4141;
+  /* height: fit-content; */
+}
+/* якщо є знижка */
+.hide__showDiscount {
+  display: none;
+}
+.show__pizzaItemPriceLine {
+  text-decoration-line: line-through;
+}
+/* ****************************** */
+.size__choicePizzaHide {
+  display: inline-flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  list-style: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+
+  width: 330px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.sizeHide {
+  display: none;
+}
+.pricePizzaForShowSize {
+  display: none;
+}
