@@ -2,7 +2,7 @@
 Pet-project
 
 ***
-Link to the project [Pizza](https://yana-shcherbyna.github.io/Kettles/) GitHub Page.
+Link to the project [Pizza](https://yana-shcherbyna.github.io/Pizza_site/) GitHub Page.
 
-Link to layout [Pizza]([https://www.figma.com/file/aQrySU5GdhjipMNWOBwa9v/Task?node-id=16%3A141&mode=dev](https://www.figma.com/community/file/1184172142545790709)https://www.figma.com/community/file/1184172142545790709) from the Figma.
+Link to layout [Pizza](https://www.figma.com/file/3SP74LHHR5FujmF40YRrE5/Pizza-website-(Community)?type=design&node-id=0-1&mode=design&t=rWEe1Wcis8R0TFge-0) from the Figma.
 ***
